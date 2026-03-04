@@ -231,7 +231,7 @@ export default function App() {
   return (
     <div className="app">
       {/* TODO 1.1: Set header className EXACTLY as in lab instructions */}
-      <header className="">
+      <header className="bg-primary text-white py-3 mb-4 shadow">
         <Container>
           <h1 className="h2 mb-0">User Management Dashboard</h1>
           <p className="mb-0 opacity-75">Search users and view details</p>
@@ -254,7 +254,7 @@ export default function App() {
       </Container>
 
       {/* TODO 1.1: Set footer className EXACTLY as in lab instructions */}
-      <footer className="">
+      <footer className="bg-light py-4 mt-5">
         <Container>
           <small className="text-muted">SWE 363 — React Lab</small>
         </Container>
@@ -262,3 +262,14 @@ export default function App() {
     </div>
   );
 }
+
+// - Grid layout:
+//   In the return statement:
+//     1) Render a <Row>
+//     2) Inside <Row>, map over users using users.map(...)
+//     3) For each user, render:
+//        <Col key={user.id} md={6} lg={4} className="mb-4">
+//          <UserCard user={user} onUserClick={onUserClick} />
+//        </Col>
+//    4) Inside each <Col>, render:
+//        <UserCard user={user} onUserClick={onUserClick} />
