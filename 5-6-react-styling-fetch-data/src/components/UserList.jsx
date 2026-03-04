@@ -14,11 +14,11 @@ function UserList({ users, onUserClick }) {
 
   return (
     <Row>
-      users.map{
-        <Col key={user.id} md={6} lg={4} className="mb-4">
-          <UserCard user={user} onUserClick={onUserClick} />
-        </Col>
-      }
+    {users.map((user) => (
+      <Col key={user.id} md={6} lg={4} className="mb-4">
+        <UserCard user={user} onUserClick={onUserClick} />
+      </Col>
+    ))}
     </Row>
   );
 }
