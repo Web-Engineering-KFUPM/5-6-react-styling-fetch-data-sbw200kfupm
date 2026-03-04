@@ -262,14 +262,3 @@ export default function App() {
     </div>
   );
 }
-
-// - Grid layout:
-//   In the return statement:
-//     1) Render a <Row>
-//     2) Inside <Row>, map over users using users.map(...)
-//     3) For each user, render:
-//        <Col key={user.id} md={6} lg={4} className="mb-4">
-//          <UserCard user={user} onUserClick={onUserClick} />
-//        </Col>
-//    4) Inside each <Col>, render:
-//        <UserCard user={user} onUserClick={onUserClick} />
